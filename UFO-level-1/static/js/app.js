@@ -14,8 +14,7 @@ button.on("click", runEnter);
 function runEnter() {
  tbody.html("")
   // Select the input element and get the raw HTML node
-  //duplicate next three lines and instead of var filterData use filterData = filterData.filter
-  var inputElement = d3.select("#datetime");
+    var inputElement = d3.select("#datetime");
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
