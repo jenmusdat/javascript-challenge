@@ -6,6 +6,8 @@ I worked on the UFO-level-1 portion of the assignment working creating the table
 
 I tried to do UFO-level-2 and was unable to get the fillable lookup buttons to work correctly. I left them in the assignment so I can try to work on it later.
 
+For fun I added an image from the Fire In the Sky which was filmed in my hometown in 1993! There is no copyright infringement intended.
+
 ## Submitted by
 
 ## Jenny Kaylor
