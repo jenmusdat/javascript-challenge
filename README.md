@@ -1,6 +1,6 @@
 # javascript-challenge
 
-This was a really challenging.
+This was a really challenging assignment.
 
 I worked on the UFO-level-1 portion of the assignment working creating the table as it should appear when you first open the webpage. I did this by creating the table through appending rows in a for each function. Once I got the table created I worked on the fillable datetime functionality on the webpage.
 
