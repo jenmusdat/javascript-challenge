@@ -36,45 +36,49 @@
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="city" type="text" placeholder="fresno">
-                      </li>
-                    </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
+                  <li class="filter list-group-item">
+                    <label for="date">Enter a Date</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="city">Enter a City</label>
+                    <input class="form-control" id="city" type="text" placeholder="fresno">
+                  </li>
+                  </ul>
               </div>
+              <button id="filter-btn-date" onclick="filterSelection ('datetime')" class="btn btn-default">Filter
+                Table on Date</button>
+              <button id="filter-btn-city" onclick="filterSelection('city')" class="btn btn-default">Filter Table on
+                City</button>
+              </form>
             </div>
-          </aside>
         </div>
-        <div class="col-md-10">
-          <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
-              <thead>
-                <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
+        </aside>
+      </div>
+      <div class="col-md-10">
+        <div id="table-area" class="">
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Date</th>
+                <th class="table-head">City</th>
+                <th class="table-head">State</th>
+                <th class="table-head">Country</th>
+                <th class="table-head">Shape</th>
+                <th class="table-head">Duration</th>
+                <th class="table-head">Comments</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <span class="bottom">UFO Sightings</span>
-    </footer>
+  </div>
+  <footer class="footer">
+    <span class="bottom">UFO Sightings</span>
+  </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>

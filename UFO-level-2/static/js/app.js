@@ -5,10 +5,12 @@ var ufoData = data;
 var tbody = d3.select("tbody");
 
 // Select the button
-var button = d3.select("#filter-btn");
+var button1 = d3.select("#filter-btn-date");
+//var button2 = d3.select("#filter-btn-city");
 
 // Create event handlers
-button.on("click", runEnter);
+button1.on("click", runEnter);
+//else button2.on("click", runEnter);
 
 // Complete the event handler function for the form
 function runEnter() {
@@ -19,17 +21,18 @@ function runEnter() {
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
-  var filterData = data.filter((obj) => obj.datetime == inputValue);
+  var filterData = data.filter((obj) => obj.datetime == inputDateValue);
+
   // Select the input element and get the raw HTML node
   var inputElement = d3.select("#city");
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
-  filterData = filterData.filter((obj) => obj.city == inputValue);
+  filterData = filterData.filter((obj) => obj.city == inputCityValue);
   console.log(filterData);
   displayufodata(filterData);
-  console.log(inputValue);
+  console.log(inputDateValue, inputCityValue);
 }
 
 //add a function here

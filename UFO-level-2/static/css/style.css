@@ -97,7 +97,7 @@ select {
   height: 550px;
   padding: 20px;
   margin: 0;
-  background: black;
+  background: rgb(133, 11, 11);
   background-image: url("../images/nasa.jpg");
   background-attachment: fixed;
   background-position: bottom center;
@@ -120,22 +120,22 @@ select {
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #8f9294;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: #a2a5a8;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #8e979f;
+  color: #a8a9aa;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #8e979f;
+  color: #caced1;
 }
 
 /* media queries which will only be activated at specific screen sizes */
@@ -153,7 +153,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #012704;
   }
 
   #table-area tr td:last-child {
@@ -166,7 +166,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: rgb(163, 136, 155);
   }
 
   #table-area td {
